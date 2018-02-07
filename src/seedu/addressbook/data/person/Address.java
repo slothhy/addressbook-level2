@@ -9,7 +9,7 @@ import seedu.addressbook.data.exception.IllegalValueException;
 public class Address {
 
     public static final String EXAMPLE = "123, some street";
-    public static final String MESSAGE_ADDRESS_CONSTRAINTS = "Person addresses can be in any format";
+    public static final String MESSAGE_ADDRESS_CONSTRAINTS = "Person addresses should be of format BLOCK, STREET, UNIT, POSTAL CODE";
     public static final String ADDRESS_VALIDATION_REGEX = ".+,.+,.+,.+";
     public static final String SEPARATOR = ",";
 
@@ -43,7 +43,7 @@ public class Address {
         Street street = new Street(trimmedAddressParts[STREET]);
         Unit unit = new Unit(trimmedAddressParts[UNIT]);
         PostalCode postal = new PostalCode((trimmedAddressParts[POSTALCODE]));
-        return block.getBlock() + "," + street.getStreet() + "," + unit.getUnit() + ", " + postal.getPostal();
+        return block.getBlock() + "," + street.getStreet() + "," + unit.getUnit() + "," + postal.getPostal();
     }
 
     /**
