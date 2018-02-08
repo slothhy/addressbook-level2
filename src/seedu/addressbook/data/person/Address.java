@@ -8,7 +8,7 @@ import seedu.addressbook.data.exception.IllegalValueException;
  */
 public class Address {
 
-    public static final String EXAMPLE = "123, some street";
+    public static final String EXAMPLE = "123, some street, #09-123, 608888";
     public static final String MESSAGE_ADDRESS_CONSTRAINTS = "Person addresses should be of format BLOCK, STREET, UNIT, POSTAL CODE";
     public static final String ADDRESS_VALIDATION_REGEX = ".+,.+,.+,.+";
     public static final String SEPARATOR = ",";
